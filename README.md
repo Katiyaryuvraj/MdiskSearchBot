@@ -1,5 +1,8 @@
 # Mdisk Search Bot
 
+
+NOTE: full source code is written by @AbirHasan2005 , i just changed some codes.
+
 We have to use Bot for Inline Search & Userbot for Searching in Channels. So both Bot & Userbot will work together.
 
 ## Installation
