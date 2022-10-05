@@ -1,6 +1,6 @@
 {
-    "name": "This is Inline Search Bot by @RoyalKrrishna",
-    "description": "This is Inline Channel Messages Search Bot by @RoyalKrrishna",
+    "name": "This is Inline Search Bot ",
+    "description": "This is Inline Channel Messages Search Bot ",
     "keywords": [
         "telegram",
         "channel",
@@ -8,7 +8,7 @@
         "search",
         "bot"
     ],
-    "repository": "https://github.com/RoyalKrrishna/MessageSearchBot",
+    "repository": "https://github.com/Katiyaryuvraj/MdiskSearchBot",
     "website": "https://telegram.dog/RoyalKrrishna",
     "success_url": "https://t.me/mdisksearchroBot",
     "env": {
