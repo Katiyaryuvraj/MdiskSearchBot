@@ -28,8 +28,8 @@ async def start_handler(_, event: Message):
 	await event.reply_photo("https://te.legra.ph/file/e7f7c7fabf5096c34ed61.jpg",
                                 caption=Config.START_MSG.format(event.from_user.mention),
                                 reply_markup=InlineKeyboardMarkup([
-                                    [InlineKeyboardButton("Our Channel", url="https://t.me/cynitemovies"),
-                                     InlineKeyboardButton("Creator", url="https://t.me/Cyniteofficial")],
+                                    [InlineKeyboardButton("Our Channel", url="https://t.me/SY_Entertainments"),
+                                     InlineKeyboardButton("Creator", url="https://t.me/Its_hackers_arena")],
                                     [InlineKeyboardButton("Help", callback_data="Help_msg"),
                                      InlineKeyboardButton("About", callback_data="About_msg")]]))
 
@@ -38,8 +38,8 @@ async def help_handler(_, event: Message):
 
     await event.reply_text(Config.ABOUT_HELP_TEXT.format(event.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("Our Channel", url="https://t.me/iP_Movies"),
-             InlineKeyboardButton("Our Group", url="https://t.me/iPopcornMovieGroup"), 
+            [InlineKeyboardButton("Our Channel", url="https://t.me/SY_Entertainments"),
+             InlineKeyboardButton("Our Group", url="https://t.me/SY_Movies_Request_Group"), 
              InlineKeyboardButton("About", callback_data="About_msg")]
         ])
     )
@@ -78,11 +78,11 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Our Channel", url="https://t.me/cyniteMovies"),
-						InlineKeyboardButton("Join", url="https://t.me/Technicalcynite")
+						InlineKeyboardButton("Our Channel", url="https://t.me/SY_Entertainments"),
+						InlineKeyboardButton("Join", url="https://t.me/SY_Bots")
 					],
 					[
-						InlineKeyboardButton("Creator", url="https://t.me/cyniteofficial"),
+						InlineKeyboardButton("Creator", url="https://t.me/Its_hackers_arena"),
 						InlineKeyboardButton("Home", callback_data="gohome")
 					]
 				]
@@ -97,10 +97,10 @@ async def button(bot, cmd: CallbackQuery):
 				[
 					[
 						InlineKeyboardButton("About", callback_data="About_msg"),
-						InlineKeyboardButton("Our Channel", url="https://t.me/cyniteMovies")
+						InlineKeyboardButton("Our Channel", url="https://t.me/Its_hackers_arena")
 					], 
                                         [
-						InlineKeyboardButton("Owner", url="https://t.me/cyniteofficial"),
+						InlineKeyboardButton("Owner", url="https://t.me/SY_Bots"),
 						InlineKeyboardButton("Home", callback_data="gohome")
 					]
 				]
@@ -118,8 +118,8 @@ async def button(bot, cmd: CallbackQuery):
 						InlineKeyboardButton("About", callback_data="About_msg")
 					],
 					[
-						InlineKeyboardButton("Support", url="https://t.me/cyniteofficial"),
-						InlineKeyboardButton("Channel", url="https://t.me/cynitemovies")
+						InlineKeyboardButton("Support", url="https://t.me/SY_Bots_Support_Group"),
+						InlineKeyboardButton("Channel", url="https://t.me/SY_Entertainments")
 					]
 				]
 			),
