@@ -58,7 +58,7 @@ async def inline_handlers(_, event: Message):
                 msg_text = message.text.html.split("|||", 1)[0]
             answers += f'**🍿 Title ➠ ' + '' + f_text.split("\n", 1)[0] + '' + '\n\n📜 About ➠ ' + '' + f_text.split("\n", 2)[-1] + ' \n\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\nLink Will Auto Delete In 60Sec...⏰\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n\n**'
         else:
-            answers += f'**➠❌ No result found\n➠✅ Ask Directly From Admin👇👇\n➠🤠Start this bot 👇\n@SY_Entertainments_bot\nand send your Movie/series name it will reach to admin directly\n<a href='https://tinyurl.com/3ud2up23'>हिंदी में अनुवाद करने के लिए यहां दबाए</a>\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n\n'
+            answers += f'**➠❌ No result found\n➠✅ Ask Directly From Admin👇👇\n➠🤠Start this bot 👇\n@SY_Entertainments_bot\nand send your Movie/series name it will reach to admin directly\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n\n'
     try:
         msg = await event.reply_text(answers)
         await asyncio.sleep(60)
