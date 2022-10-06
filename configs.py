@@ -7,15 +7,15 @@ class Config(object):
     API_ID = int(os.environ.get("API_ID", 12345))
     API_HASH = os.environ.get("API_HASH", "")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    BOT_SESSION_NAME = os.environ.get("BOT_SESSION_NAME", "MdiskSearchBot")
+    BOT_SESSION_NAME = os.environ.get("BOT_SESSION_NAME", "SY Movies/SeriesSearchBot")
     USER_SESSION_STRING = os.environ.get("USER_SESSION_STRING", "")
     CHANNEL_ID = int(os.environ.get("CHANNEL_ID", -100))
     BOT_USERNAME = os.environ.get("BOT_USERNAME")
     BOT_OWNER = int(os.environ.get("BOT_OWNER"))
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
-    ABOUT_BOT_TEXT = """<b>This is Mdisk Search Bot.
+    ABOUT_BOT_TEXT = """<b>This is SY Movies/Series Search Bot.
 
-🤖 My Name: <a href='https://t.me/SY_Bots'>Mdisk Search Robot</a>
+🤖 My Name: <a href='https://t.me/SY_Bots'>SY Movies/Series Search Robot</a>
 
 📝 Language : <a href='https://www.python.org'> Python V3</a>
 
@@ -23,16 +23,16 @@ class Config(object):
 
 📡 Server: <a href='https://heroku.com'>Heroku</a>
 
-👨‍💻 Created By: <a href='https://t.me/Its_hackers_arena'>Cynite</a></b>
+👨‍💻 Created By: <a href='https://t.me/Its_hackers_arena'>SY</a></b>
 """
 
-    ABOUT_HELP_TEXT = """<b>👨‍💻 Developer : <a href='https://t.me/Its_hackers_arena'>Click Me</a>
+    ABOUT_HELP_TEXT = """<b>👨‍💻 Developer : <a href='https://t.me/Its_hackers_arena'>SY</a>
 
 If You Want Your Own Bot Like This Then You Can Contact Our Developer.</b>
 """
 
     HOME_TEXT = """
-<b>Hey! {}😅,
+<b>Hey! {}😎,
 
 I'm Mdisk Search Robot.🤖</a>
 
