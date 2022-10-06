@@ -48,7 +48,7 @@ async def help_handler(_, event: Message):
 async def inline_handlers(_, event: Message):
     if event.text == '/start':
         return
-    answers = f'**📂 Results For ➠ {event.text} \n\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n➠ Type Only Movie Name With Correct Spelling.✍️\n➠ Add Year For Better Result.🗓️\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n\n**'
+    answers = f'**📂 Results For ➠ {event.text} \n\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n➠ Type Only Movie Name With Correct Spelling.✍️\n➠ Add Year For Better Result.🗓️\n➠Join Our Channel - https://t.me/SY_Entertainments\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n\n**'
     async for message in User.search_messages(chat_id=Config.CHANNEL_ID, limit=50, query=event.text):
         if message.text:
             f_text = message.text
@@ -58,7 +58,7 @@ async def inline_handlers(_, event: Message):
                 msg_text = message.text.html.split("|||", 1)[0]
             answers += f'**🍿 Title ➠ ' + '' + f_text.split("\n", 1)[0] + '' + '\n\n📜 About ➠ ' + '' + f_text.split("\n", 2)[-1] + ' \n\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\nLink Will Auto Delete In 60Sec...⏰\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n\n**'
         else:
-            answers += f'**❌ No result found\n✅ Ask Here - @SY_Entertainments_Bot\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n\n**'
+            answers += f'**➠❌ No result found\n➠✅ Ask Directly From Admin👇👇\n➠🤠Start this bot 👇\n@SY_Entertainments_bot\nand send your Movie/series name it will reach to admin directly\n<a href='https://te.legra.ph/SY-Entertainments-Movie-not-found-10-06'>हिंदी में अनुवाद करने के लिए यहां दबाए</a>\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n\n'
     try:
         msg = await event.reply_text(answers)
         await asyncio.sleep(60)
